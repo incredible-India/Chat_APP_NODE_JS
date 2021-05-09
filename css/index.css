@@ -1,0 +1,121 @@
+@font-face {
+    font-family: love;
+    src: url(./../FONTS/FontdinerdotcomLuvable.ttf);
+
+}
+
+
+.mainheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 10px;
+   
+    padding: 10px;
+  
+
+}
+
+.mainheading img {
+    position: relative;
+    top: -10px;
+}
+
+.mainheading h1 {
+    font-family: love;
+    letter-spacing: 4px;
+}
+
+.l {
+    color: #E91E63;
+}
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.chatbox {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 1000px;
+    height: 80vh;
+    overflow-y: auto ;
+    border: 1px #E91E63 solid;
+}
+
+.inputbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+ 
+}
+
+.inputbox  input[type ="text"]
+{
+    width: 600px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.inputbox  input[type ="button"]
+{
+    background-color: #E91E63;
+}
+
+.inputbox form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.chatbox {
+    display: flex;
+    flex-direction:column;
+    margin: 5px;
+    padding: 10px;
+    /* justify-content:; */
+
+    margin: 10px;
+}
+
+
+
+ .otherChat{
+    background-color: #E91E63;
+    color: black;
+    font-weight: 100px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+
+
+}
+
+.mineChat{
+    background-color: #E91E63;
+    color: black;
+    font-weight: 100px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+
+}
+
