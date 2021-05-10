@@ -1,16 +1,14 @@
 //node server handle all the connection
 
 
-const io = require('socket.io')(8080, {
-    cors: {
-      origin: "https://localhost:5500",
-      methods: ["GET", "POST"]
-    }
-  });;
 
+const io = require("socket.io")(8080)
 
 const users = {};//blank object
+
+
 // io.on is a event, parameter function name may be differ we can write anything instead of soket
+
 io.on('connection', sokcet=>{
 
     socket.on("userJoined",name =>{
@@ -27,6 +25,4 @@ io.on('connection', sokcet=>{
     })
 
 })
-
-
 
