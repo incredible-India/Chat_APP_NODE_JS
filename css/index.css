@@ -41,9 +41,9 @@
 }
 .chatbox {
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin-top: 5px;
     width: 1000px;
     height: 80vh;
@@ -83,8 +83,8 @@
 }
 
 .chatbox {
-    display: flex;
-    flex-direction:column;
+    /* display: flex;
+    flex-direction:column; */
     margin: 5px;
     padding: 10px;
     /* justify-content:; */
@@ -103,6 +103,8 @@
     border-radius: 10px;
     width: 400px;
     margin-bottom: 10px;
+    float: left;
+    clear: both;
 
 
 }
@@ -116,6 +118,8 @@
     border-radius: 10px;
     width: 400px;
     margin-bottom: 10px;
+    float: right;
+    clear: both;
 
 }
 
