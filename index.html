@@ -4,51 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
-    <title>DO-Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/index.css">
+    <title>Room Chat</title>
 </head>
 <body>
-    <div class="mainheading container">
-        <h1 class="do"> <span class="l">D</span>o</h1>
-        <img src="./img/949058-e91e63.svg" alt="" class="img fluid" width="200px" height="200px">
-        <h1 class="chat"> <span class="l">C</span>hat</h1>
+
+
+
+    <div class="mainheading tk">
+
+        <h2 class="mainheading">Room <img src="./img/310399.svg" alt="" class="img-fluid mainheading" width="150px" height="200px"> Chat</h2>
+
     </div>
 
 
-<div class="box container">
-
-
-    <div class="chatbox container">
-   
-
-        <!-- show all chat here  -->
-        <div class="mineChat">
-
-           <h5> How are you ?</h5>
-         
-
-        </div>
-  
-
-        <div class="otherChat">
-           <h5> i am Fine .</h5>
-        
-        </div>
+    <nav class="navbar">
+      <h2>Room Chat</h2>
+      </nav>
       
-
+<!-- alerting for the loosing the server  -->
+<!-- <div class="alert alert-danger d-flex align-items-center" role="alert"  style="display: none;">
+    <i class="fas fa-exclamation-triangle"></i>
+    <div>
+      Server connection has been lost
     </div>
+  </div> -->
+    
 
-    <div class="inputbox container">
-        <form action="#" >
-            <input type="text" placeholder="text here.." class="form-control">
-            <input type="submit" value=" Send " class="btn btn-success">
-        </form>
-    </div>
-</div>
 
+  <div class="roomchat">
+      <div class="chatbox">
+
+        <div class="mine">
+            <h5>Hello</h5>
+        </div>
+        <div class="other"> <h5>HEy</h5></div>
+
+      
+        <div class="serch">
+            <form action="#" >
+                <input type="text" placeholder="text here" class="form-control">
+                <input type="submit" value="Send" class="btn btn-primary">
+            </form>
+    
+        </div>
+
+
+      </div>
+      <div class="status">
+
+        <div class="online th">
+            <h3 style="text-align: center;">Online</h3>
+                <h5>MAX Sinf</h5>
+                <h5>MAX Sinf</h5>
+                <h5>MAX Sinf</h5>
+        </div>
+        <hr>
+        <div class="offline th">
+
+            <h3 style="text-align: center;">Offline</h3>
+            <h5>MAX Sinf</h5>
+            <h5>MAX Sinf</h5>
+            <h5>MAX Sinf</h5>
+            <h5>MAX Sinf</h5>
+
+        </div>
+
+      </div>
+  </div>
 </body>
-<script src="./javascript/client.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </html>

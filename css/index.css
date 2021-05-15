@@ -23,103 +23,104 @@
     top: -10px;
 }
 
-.mainheading h1 {
+.mainheading h2 {
     font-family: love;
     letter-spacing: 4px;
 }
 
-.l {
-    color: #E91E63;
+.tk{
+    width: 100%;
+    height: 400px;
+    background-color: lightblue;
 }
-.box
-{
+
+
+.navbar{
+    background-color: rgb(87, 245, 126);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+
+.roomchat{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5px;
-}
-.chatbox {
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    margin-top: 5px;
-    width: 1000px;
-    height: 80vh;
-    overflow-y: auto ;
-    border: 1px #E91E63 solid;
-}
-
-.inputbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5px;
- 
-}
-
-.inputbox  input[type ="text"]
-{
-    width: 600px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    margin-right: 12px;
-}
-
-.inputbox  input[type ="button"]
-{
-    background-color: #E91E63;
-}
-
-.inputbox form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-
+    position:relative;
+    top: 30px;
 }
 
-.chatbox {
-    /* display: flex;
-    flex-direction:column; */
-    margin: 5px;
-    padding: 10px;
-    /* justify-content:; */
+.chatbox{
+    width: 100%;
+    height: 900px;
+    overflow-y: auto;
 
-    margin: 10px;
+
+}
+.status{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    position: sticky;
+    top: 30px;
+    margin: 15px;
+}
+.th h3 {
+
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+  
 }
 
 
 
- .otherChat{
-    background-color: #E91E63;
-    color: black;
-    font-weight: 100px;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 10px;
-    width: 400px;
-    margin-bottom: 10px;
+.th{
+    overflow-y: auto;
+}
+
+
+.mine{
+    display: block;
     float: left;
     clear: both;
-
-
-}
-
-.mineChat{
-    background-color: #E91E63;
-    color: black;
-    font-weight: 100px;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 10px;
+    background-color: lightgreen;
+    border-radius: 20px;
     width: 400px;
-    margin-bottom: 10px;
-    float: right;
-    clear: both;
 
 }
 
+.other{
+    display: block;
+    float: right;
+    clear: both; 
+    background-color: lightblue;
+    border-radius: 20px;
+    width: 400px;
+}
+.chatbox{
+    margin-top: 15px;
+    position: relative;
+    top: 30px;
+    border: 1px solid red;
+}
+
+.serch form{
+
+    position: relative;
+    bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    bottom: 12px;
+
+}
+
+input[type="text"]{
+    width: 800px;
+}
+
+input[type="submit"]{
+   margin-left: 10px;
+}
