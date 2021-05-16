@@ -1,13 +1,26 @@
-// const io = require("socket.io-client");
-// const io = require("socket.io-client");
+if('WebSocket' in window)
+{
+    const  ws = io('http://localhost:8080');
+
+    const UserName =  prompt('Enter Your Name...');
 
 
-const socket =  io("http://localhost:8000")
-// const socket = io('http://127.0.0.1:8080');
+    ws.emit("NewUserJoined",UserName); //this will send the the username to the server
 
-// socket.emit("")
-socket.emit("userJoined","himanhi")
+    //on recieving the the new user joined mesage
+    ws.on("userjoinNotification",Notification=>{
+        //this notification came from the server side
+        console.log("New User",Notification,"joined");
+    })
 
 
+    //if user left the chat
+    ws.on("disconnectUser",nameUser=>{
+        console.log(nameUser,"left the chat");
+    })
 
-socket.emit('userJoined','Username'); 
+
+    ws.on('disconnect',()=>{
+        console.log("Server Connection lost");
+    })
+}
