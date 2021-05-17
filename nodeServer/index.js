@@ -25,18 +25,20 @@ io.on("connection",Socket=>{
         Socket.name = Userinfo; //this Userinfo is recived form the client Side
         console.log(Socket.name ,"is joined");
 
-        Socket.broadcast.emit("userjoinNotification",Socket.name);// this will send the user namet to the client side..
-
-
-
-       
+        Socket.broadcast.emit("userjoinNotification",JSON.stringify({name : Socket.name ,id : Socket.id}));// this will send the user namet to the client side..
 
 
     })
 
+    //when client send any message 
+    Socket.on('MessageCame',message=>{
+        console.log(Socket.name ," Send : ", message);
+        Socket.broadcast.emit('Recivedmessage',JSON.stringify({name : Socket.name, text : message}));//this will send to the client message
+    })
+
     Socket.on('disconnect', ()=>{
             
-        Socket.broadcast.emit("disconnectUser",Socket.name);
+        Socket.broadcast.emit("disconnectUser",JSON.stringify({name : Socket.name ,id : Socket.id}));
         console.log(Socket.name," left the chat");
 
        
